@@ -32,7 +32,7 @@ setup(
 	classifiers=[
 		'Framework :: Lektor',
 		'Environment :: Plugins',
-		'License :: OSI Approved :: MIT',
+		'License :: OSI Approved :: MIT License',
 	],
 	entry_points={
 		'lektor.plugins': [
