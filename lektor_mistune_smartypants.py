@@ -14,6 +14,8 @@ class MistuneSmartypantsPlugin(Plugin):
 				return super().paragraph(smartypants.smartypants(text))
 			def header(self, text, level, raw=None):
 				return super().header(smartypants.smartypants(text), level, raw)
+			def list_item(self, text):
+				return super().list_item(smartypants.smartypants(text))
 		config.renderer_mixins.append(SmartyPantsMixin)
 
 	def on_setup_env(self, **extra):
